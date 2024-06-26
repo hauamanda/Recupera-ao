@@ -1,0 +1,217 @@
+BASIC
+
+-Pra começar o HTML, ecrever na tela html:5
+
+-colar sempre isso depois antes de head <link rel="stylesheet" href="style.css">
+                                        <script src="script.js" defer></script>
+-height: altura
+-width: largura
+
+-quando colocar * (css) as alteraçoes vao ser para todas as coisas da pagina
+-padding:  é responsável por definir uma distância interna entre um elemento e sua borda
+
+-TODO CSS COLOCAR:
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:   ;
+}
+
+Quando usar id e quando usar class?
+O id (unico) so pode se repetir uma vez em um arquivo, e a classe nao segue essa regra.
+
+header, nav, main, footer - SAO TAGS
+
+form - tag de formulario (tudo oq é numerico posso definir min e max)
+-number: posso definir valor min e max (Aula2Ex- linha 14)
+-colocar letrinhas nos campos de formulario: placeholder="Insira o titulo" (Aula2Ex - linha 13)
+
+fildset é usado para agrupar elementos, assim como labels ( <label> ), dentro de um formulário web
+
+label representa uma legenda para um item em uma interface de usuário
+
+metodo (Aula2Ex - linha 11): post- nao aparece os dados
+        get - aparece os dados 
+
+_____________________________________________________________________________________________________
+AULA 6/3
+DIV:
+TAMANHO:border + padding + largura
+
+----------------------------------------------------------------------------------------------------
+AULA 13/03
+
+para colocar fontes, pesquisar no google fonts, e importar!
+
+https://staratlas.com/
+
+---------------------------------------------------------------------------------------------------
+
+ <script src="script.js" defer></script>
+
+ adicionar e remover tag
+
+ Contêiner e Itens Flexíveis: Em um layout flexbox, os elementos são organizados dentro de um contêiner flexível, que pode ser horizontal (row) ou vertical (column). Esses elementos dentro do contêiner são chamados de itens flexíveis.
+
+Eixo Principal e Eixo Transversal: O eixo principal é a direção primária de layout do contêiner, enquanto o eixo transversal é perpendicular ao eixo principal. Por padrão, o eixo principal é horizontal (row) e o eixo transversal é vertical (column).
+
+Distribuição de Espaço: Flexbox permite distribuir o espaço disponível dentro do contêiner entre os itens flexíveis de maneira flexível e automática, usando propriedades como justify-content e align-items.
+
+Alinhamento: Além de distribuir o espaço, Flexbox também permite alinhar os itens flexíveis ao longo do eixo principal e transversal usando propriedades como justify-content, align-items, align-self, entre outras.
+
+Reorganização Dinâmica: Os itens flexíveis podem ser reorganizados automaticamente dentro do contêiner com base no espaço disponível e nas propriedades de ordem (order) e flexibilidade (flex).
+
+Responsividade: Flexbox é altamente adaptável a diferentes tamanhos de tela e dispositivos, facilitando a criação de layouts responsivos e fluidos.
+
+
+display: grid;
+// Torna o elemento um grid container.
+display: inline-grid;
+// Torna o elemento um grid container porém com comportamento inline.
+display: subgrid;
+// Para grids dentro de grids (ainda não é suportado, porém você pode normalmente colocar display: grid; no grid dentro do grid que funciona).
+
+gap: 20px
+// Define 20px entre os elementos do grid (linha e coluna).
+column-gap: 20px
+// Define 20px de distância entre as colunas.
+row-gap: 20px
+// Define 20px de distância entre as linhas.
+
+justify-content: start
+// Justifica os itens ao início.
+justify-content: end
+// Justifica os itens ao final.
+justify-content: stretch
+// Estica os itens.
+justify-content: space-around
+// Distribui espaço entre os elementos. (O início e final são menores que os espaços internos).
+justify-content: space-between
+// Cria um espaço entre os elementos, ignorando o início e final.
+justify-content: space-evenly
+// Cria um espaço igual entre as colunas (no início e final também).
+justify-content: center
+// Centraliza o conteúdo.
+
+align-content: start
+// Alinha os itens ao início.
+align-content: end
+// Alinha os itens ao final.
+align-content: stretch
+// Estica os itens.
+align-content: space-around
+// Distribui espaço entre os elementos. (O início e final são menores que os espaços internos).
+align-content: space-between
+// Cria um espaço entre os elementos, ignorando o início e final.
+align-content: space-evenly
+// Cria um espaço igual entre as colunas (no início e final também).
+align-content: center
+// Centraliza o conteúdo.
+
+align-items: start
+// Alinha os itens ao início.
+align-items: end
+// Alinha os itens ao final.
+align-items: center
+// Centraliza o conteúdo.
+align-items: stretch
+// Estica os itens.
+
+grid-column: 1
+// O item ocupará a coluna 1.
+grid-column: 1 / 3
+// O item ocupará a coluna 1 e 2 (Sim, isso mesmo, 1 e 2, pois os valores 1 / 3 são referentes as linhas da coluna. Isso significa que começa na linha 1 (início do grid) e vai até a linha 3, que é o começo da terceira coluna).
+grid-column-start: 2
+// O item vai começar na linha 2.
+grid-column-end: 4
+// O item vai terminar na linha 4.
+grid-column: span 2
+// O item irá ocupar duas colunas a partir de onde ele estiver.
+
+Mostra um texto no seu html:
+
+var texto = document.getElementById(“texto”).innerText = “texto quer mudar”
+Substitui o “texto” pelo seu id
+
+ Pegar um valor de um input:
+var info = document.getElementById(“input”).value
+
+ Um exemplo de como pegar o valor de um input e imprimir o dobro dele é
+var info = document.getElementById(“input”).value 
+var texto = document.getElementById(“texto”).innerText = toString(info * 2)
+
+------------------------------------------------------------------------------------------------------------------
+1. Para que serve a tag `<title>` dentro da tag `<head>`?
+   - A tag `<title>` define o título do documento HTML. Ele é exibido na barra de título do navegador ou na aba da página. O conteúdo dentro da tag `<title>` também é utilizado por mecanismos de busca para descrever o conteúdo da página.
+
+2. O que é um atributo em HTML e como ele é usado?
+   - Um atributo em HTML fornece informações adicionais sobre um elemento e é especificado na tag de abertura do elemento. 
+   Por exemplo, `<img src="imagem.jpg" alt="Descrição da imagem">`, onde `src` e `alt` são atributos da tag `<img>`.
+    Eles modificam o comportamento ou a aparência do elemento.
+
+3. Qual a função da tag `<body>` em um documento HTML?
+   - A tag `<body>` contém todo o conteúdo visível de uma página HTML. Ela engloba desde texto até imagens, links, formulários e 
+   outros elementos que são exibidos diretamente na janela do navegador.
+
+4. Qual a diferença entre as tags `<div>` e `<span>`?
+   - `<div>` e `<span>` são elementos genéricos de contêiner em HTML.
+   - `<div>` é um elemento de bloco, usado para agrupar elementos e aplicar estilos de layout. Ele geralmente cria quebras de 
+   linha antes e depois de si.
+   - `<span>` é um elemento inline, usado para agrupar texto e outros elementos em linha sem criar quebras de linha.
+
+5. **Como você cria uma lista ordenada e uma lista não ordenada em HTML?**
+   - Lista ordenada (`<ol>`):
+     ```html
+     <ol>
+       <li>Item 1</li>
+       <li>Item 2</li>
+       <li>Item 3</li>
+     </ol>
+     ```
+   - Lista não ordenada (`<ul>`):
+     ```html
+     <ul>
+       <li>Item A</li>
+       <li>Item B</li>
+       <li>Item C</li>
+     </ul>
+     ```
+
+6. **Como você comenta código em HTML?**
+   - Comentários em HTML são feitos usando `<!-- comentário -->`. Todo o texto dentro dos `<!--` e `-->` 
+   não será exibido na página, sendo útil para notas e descrições para os desenvolvedores.
+
+7. **Qual a diferença entre uma tag semântica e uma tag não semântica? Dê exemplos.**
+   - Tags semânticas em HTML têm um significado específico que descreve seu conteúdo. Exemplos: `<header>`, `<footer>`, `<nav>`, `<article>`, `<section>`.
+   - Tags não semânticas são usadas mais para organização e estilo, sem indicar o significado específico do conteúdo. Exemplos: `<div>`, `<span>`.
+
+8. **Qual é a diferença entre os atributos id e class?**
+   - O atributo `id` é único e identifica um elemento HTML de forma exclusiva dentro de um documento. O atributo `class` é usado para agrupar elementos e aplicar estilos em conjuntos de elementos.
+
+9. **Qual a função do atributo required?**
+   - O atributo `required` é usado em elementos de formulário em HTML para especificar que um campo deve ser preenchido pelo usuário antes de enviar o formulário.
+
+10. **O que é um seletor em CSS?**
+    - Um seletor em CSS é um padrão que define quais elementos HTML serão estilizados pelo conjunto de regras CSS associado a esse seletor.
+
+11. **Qual a diferença entre um seletor de classe e um seletor de ID em CSS?**
+    - Um seletor de classe é precedido por um ponto (`.`) e pode ser aplicado a múltiplos elementos, enquanto um seletor de ID é precedido por um hash (`#`) e deve ser único dentro do documento.
+
+12. **Explique a diferença entre padding e margin.**
+    - `Padding` é o espaço entre o conteúdo do elemento e sua borda. `Margin` é o espaço externo ao redor do elemento, que define a distância entre ele e outros elementos vizinhos.
+
+13. **O que são pseudoclasses em CSS? Dê exemplos.**
+    - Pseudoclasses em CSS são palavras-chave que especificam um estado especial do elemento selecionado. Exemplos incluem `:hover`, `:focus`, `:first-child`, `:nth-child(n)`, entre outros.
+
+14. **O que é um modelo de caixa (box model) em CSS?**
+    - O modelo de caixa em CSS descreve como os elementos HTML são renderizados em relação ao espaço que ocupam. Ele consiste em margens, bordas, preenchimento e o conteúdo real do elemento.
+
+15. **Qual a diferença entre JavaScript e Java?**
+    - JavaScript é uma linguagem de script usada principalmente para interatividade em páginas da web, enquanto Java é uma linguagem de programação de propósito geral usada para desenvolvimento de aplicativos e sistemas.
+
+16. **Qual a diferença entre var, let e const em JavaScript?**
+    - `var` é escopo de função, `let` é escopo de bloco e `const` define uma variável de valor constante que não pode ser reatribuída.
+
+17. **O que é a manipulação do DOM em JavaScript?**
+    - A manipulação do DOM (Document Object Model) em JavaScript refere-se à interação com a estrutura hierárquica de elementos HTML em uma página. Isso inclui adicionar, modificar ou remover elementos dinamicamente.

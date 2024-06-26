@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Zen+Maru+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+    align-content: center;
+    padding-top: 80px;
+    margin: 70px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    font-size: 24px;
+    color: #020202;
+    font-family: "Unna", serif;
+    font-weight: 100;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-left: 100px; 
+    
+}
+
+.nav-list a {
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    opacity: 0.7;
+}
+
+.logoS {
+    font-size: 80px;
+    color: #020202;
+    font-family: "Unna", serif;
+    font-weight: 100;
+}
+
+.prateleira{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.l1 {
+    font-size: 20px;
+    color: #020202;
+    font-family: "Unna", serif;
+    font-weight: 100;
+}
+
+.a1{
+    font-size: 15px;
+    color: #020202;
+}
+
+.livro1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.img1{
+    width: 300px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.img1:hover{
+    transform: scale(1.05);
+}
+
+.img2{
+    width: 200px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.img2:hover{
+    transform: scale(1.05);
+}
+
+.img3{
+    width: 200px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.img3:hover{
+    transform: scale(1.05);
+}
+
+.img4{
+    width: 300px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.img4:hover{
+    transform: scale(1.05);
+}
+
+.img5{
+    width: 200px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.img5:hover{
+    transform: scale(1.05);
+}
+
+.cinema{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.filme {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.diretor{
+    font-size: 15px;
+    color: #020202;
+}
+
+.nome{
+    font-size: 20px;
+    color: #020202;
+    font-family: "Unna", serif;
+    font-weight: 100;
+
+}
+
+.img6{
+    width: 200px;
+    transition: transform 0.3s ease; 
+}
+
+.img6:hover{
+    transform: scale(1.05);
+}
+
+.img7{
+    width: 200px;
+    transition: transform 0.3s ease; 
+}
+
+.img7:hover{
+    transform: scale(1.05);
+}
+
+.img8{
+    width: 200px;
+    transition: transform 0.3s ease; 
+}
+
+.img8:hover{
+    transform: scale(1.05);
+}
+
+.img9{
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.img9:hover{
+    transform: scale(1.05);
+}
+
+.img10{
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.img10:hover{
+    transform: scale(1.05);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.foto{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.conjunto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+
+.texto-livro{
+    color: black;
+}
+
+#descricao1{
+    display: none;
+    text-align: justify;
+}
+
+#descricao2{
+    display: none;
+    text-align: justify;
+}
+
+#descricao3{
+    display: none;
+    text-align: justify;
+}
+
+#descricao4{
+    display: none;
+    text-align: justify;
+}
+
+#descricao5{
+    display: none;
+    text-align: justify;
+}
+
+.img1-musica{
+    width: 300px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.playlist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.musica1{
+    margin-left: 160px;
+}

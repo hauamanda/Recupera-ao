@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ body{/*usar a tela toda*/
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+header, footer{
+    width: 100%;
+   
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+  
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.formulario{
+    width:500px; /*largura*/
+    height:300px; /*altura*/
+    display: flex;
+    flex-direction: column; /*para ficar vertical*/
+    justify-content: space-around; /*para ficar espalhado na area*/
+   
+    padding: 20px; /*colocar as coisas centralizadas*/
+    border: 1px solid black; /*borda*/
+    border-radius: 5px;
+    
+}
+
+button{
+    padding: 8px;
+}
+
+input,select,label{
+    padding: 3px;
+}
